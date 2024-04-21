@@ -17,4 +17,4 @@ To access to the current diagram aditor please go to <a href="https://axxonita.g
 
 ## Development
 
-View the documentation on [development](docs/development).
+View the documentation on [development](docs/README.md).

@@ -19,4 +19,4 @@ cd docker
 docker-compose up
 ```
 
-Then access **Moodle** in your browser, with URL `http://localhost:8080/`.
+Then access **Moodle** in your browser, with URL `http://localhost:8080/`. The credentials are the [image's defaults](https://hub.docker.com/r/bitnami/moodle), username `user` and password `bitnami`.

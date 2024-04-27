@@ -24,10 +24,21 @@
 
 require_once('../../config.php');
 
+$PAGE->set_url(new moodle_url('/local/nsplus/view.php'));
+$PAGE->set_context(context_system::instance());
+$PAGE->set_title(get_string('pluginname', 'local_nsplus'));
+
+$PAGE->requires->js(new moodle_url('/local/nsplus/editor/js/html2canvas.js'));
+$PAGE->requires->js(new moodle_url('/local/nsplus/editor/js/Enumeration.js'));
+$PAGE->requires->js(new moodle_url('/local/nsplus/editor/js/ClassConstructor.js'));
+$PAGE->requires->js(new moodle_url('/local/nsplus/editor/js/BaseDiagram.js'));
+$PAGE->requires->js(new moodle_url('/local/nsplus/editor/js/DiagramObject.js'));
+$PAGE->requires->js(new moodle_url('/local/nsplus/editor/js/XNSDiagram.js'));
+$PAGE->requires->js(new moodle_url('/local/nsplus/NSPlus.js'));
+
+$PAGE->requires->css(new moodle_url('/local/nsplus/editor/css/XNSDEditor.css'));
+$PAGE->requires->css(new moodle_url('/local/nsplus/editor/css/XNSDiagram.css'));
+
 echo $OUTPUT->header();
-echo <<<'EOT'
-<div id="local-nsplus-app">
-    <h1>Bienvenido a NSPlus</h1>
-</div>
-EOT;
+include('index.html');
 echo $OUTPUT->footer();

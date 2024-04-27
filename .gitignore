@@ -1,2 +1,7 @@
+## VSCode
 .vscode/launch.json
 .vscode/
+.DS_Store
+
+## NPM
+node_modules/

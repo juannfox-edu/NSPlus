@@ -4,6 +4,8 @@ temp_folder="nsplus"
 
 mkdir $temp_folder
 cp -r ./* $temp_folder
+rm -rf $temp_folder/node_modules
+
 rm -rf $target
 
 if zip "${target}" -r $temp_folder;then

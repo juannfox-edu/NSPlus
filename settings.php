@@ -19,7 +19,7 @@
  *
  * @package     local_nsplus
  * @copyright   Instituto ORT Argentina
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license     MIT License
  */
 
 defined('MOODLE_INTERNAL') || die; // Only allow local runs

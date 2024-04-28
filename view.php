@@ -19,7 +19,7 @@
  *
  * @package     local_nsplus
  * @copyright   Instituto ORT Argentina
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license     MIT License
  */
 
 require_once('../../config.php');
@@ -27,7 +27,9 @@ require_once('../../config.php');
 $PAGE->set_url('/local/nsplus/view.php');
 $PAGE->set_title('NSPlus');
 $PAGE->set_context(context_system::instance());
+$PAGE->set_pagelayout('popup'); // Full screen, not embedded
 
+// JS includes
 $PAGE->requires->js(new moodle_url('js/XNS-core/html2canvas.js'));
 $PAGE->requires->js(new moodle_url('js/XNS-core/Enumeration.js'));
 $PAGE->requires->js(new moodle_url('js/XNS-core/ClassConstructor.js'));
@@ -48,6 +50,7 @@ $PAGE->requires->js(new moodle_url('js/XNS-editor/NSPDiagram.js'));
 $PAGE->requires->js(new moodle_url('js/XNS-editor/NSPProject.js'));
 $PAGE->requires->js(new moodle_url('js/XNS-editor/NSPEditor.js'));
 
+// CSS includes
 $PAGE->requires->css(new moodle_url('css/w3.css'));
 $PAGE->requires->css(new moodle_url('css/NSPDiagram.css'));
 $PAGE->requires->css(new moodle_url('css/NSPEditor.css'));
